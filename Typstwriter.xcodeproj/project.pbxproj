@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EF225B1E2FB5232400D32CF6 /* Compiler in Frameworks */ = {isa = PBXBuildFile; productRef = EF225B1D2FB5232400D32CF6 /* Compiler */; };
+		EF225B262FB78DBF00D32CF6 /* CodeEditSourceEditor in Frameworks */ = {isa = PBXBuildFile; productRef = EF225B252FB78DBF00D32CF6 /* CodeEditSourceEditor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF225B1E2FB5232400D32CF6 /* Compiler in Frameworks */,
+				EF225B262FB78DBF00D32CF6 /* CodeEditSourceEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +81,7 @@
 			name = Typstwriter;
 			packageProductDependencies = (
 				EF225B1D2FB5232400D32CF6 /* Compiler */,
+				EF225B252FB78DBF00D32CF6 /* CodeEditSourceEditor */,
 			);
 			productName = Typstwriter;
 			productReference = EF04D3E12FB377090072278D /* Typstwriter.app */;
@@ -110,6 +113,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				EF225B1C2FB5232400D32CF6 /* XCLocalSwiftPackageReference "compiler" */,
+				EF225B242FB78DBF00D32CF6 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EF04D3E22FB377090072278D /* Products */;
@@ -444,10 +448,26 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		EF225B242FB78DBF00D32CF6 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CodeEditApp/CodeEditSourceEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		EF225B1D2FB5232400D32CF6 /* Compiler */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Compiler;
+		};
+		EF225B252FB78DBF00D32CF6 /* CodeEditSourceEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EF225B242FB78DBF00D32CF6 /* XCRemoteSwiftPackageReference "CodeEditSourceEditor" */;
+			productName = CodeEditSourceEditor;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
